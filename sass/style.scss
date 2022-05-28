@@ -1,0 +1,74 @@
+@import "var";
+@import "header__top";
+@import "header__bot";
+@import "burger__menu";
+@import "interior";
+@import "challeng";
+@import "about";
+@import "brands";
+@import "project";
+@import "years";
+@import "blogs";
+@import "interno";
+@import "footer";
+
+
+html, body {
+    font-size: 18px;
+}
+
+body{
+    font-size: 100%;
+    font-family: 'Jost', sans-serif;
+    background-color: #F5F5F5;
+    color: $gray;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.title {
+    font-family: 'DM Serif Display', serif;
+    color: $black;
+    letter-spacing: 0.22px;
+    line-height: 1.2;
+}
+.black-btn{
+    background-color: $black;
+    color: #ffffff;
+    border: 2px solid $black;
+    border-radius: 18px;
+    letter-spacing: 0.72px;
+    padding: 18px 20px 18px 34px;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.black-btn:hover{
+    svg{
+        transform: translateX(10px);
+    }
+    background-color: #16191d;
+    transition: .3s all ease;
+}
+.gold-btn{
+    background-color: $praymary;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    color: #ffffff;
+    border: 2px solid $praymary;
+    border-radius: 18px;
+    letter-spacing: 0.72px;
+    padding: 22px 20px 22px 34px;
+}
+.gold-btn:hover{
+    svg{
+        transform: translateX(10px);
+    }
+    background-color: #c79a69;
+    transition: .3s all ease;
+}

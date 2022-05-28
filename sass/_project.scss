@@ -1,0 +1,105 @@
+.project {
+  // .project__title
+
+  &__title {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    @media (max-width: 1024px) {
+      font-size: 1.9rem;
+      margin-bottom: 1.2rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  // .project__subtitle
+
+  &__subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 3.9rem;
+    @media (max-width: 1024px) {
+        font-size: .9rem;
+        margin-bottom: 1.4rem;
+      }
+
+  }
+
+  // .project__row
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 60px;
+  }
+
+  // .project__item
+
+  &__item {
+    flex: 0 1 48%;
+    img {
+      margin-bottom: 1.1rem;
+      @media (max-width: 768px) {
+          width: 450px;
+      }
+      @media (max-width: 526px) {
+        width: 350px;
+      }
+      @media (max-width: 456px) {
+        width: 300px;
+      }
+      @media (max-width: 320px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  // .project__item-name
+  &__item-name__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__item-name {
+  }
+
+  // .project__item-name-title
+
+  &__item-name-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    @media (max-width: 768px) {
+        font-size: .9rem;
+    }
+  }
+
+  // .project__item-button
+
+  &__item-button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all ease;
+    a{
+        padding: 18px;
+    }
+    @media (max-width: 568px) {
+        width: 70px;
+        height: 70px; 
+    }
+  }
+  &__item-button:hover{
+    background-color: $praymary;
+}
+}
